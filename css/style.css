@@ -1,0 +1,229 @@
+/* Global styles */
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.features-section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  border-top: 2px solid #0884f8;
+  padding: 40px 20px;
+  background-color: #313131;
+}
+
+.card-section {
+  display: grid;
+  column-gap: 50px;
+  row-gap: 30px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.card {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  transition: 0.5s ease-out;
+  overflow: visible;
+  background: transparent;
+  border-color: #313131;
+  box-shadow: 0 4px 18px 0 rgba(112, 112, 112, 0.25);
+}
+
+.card-details {
+  display: grid;
+  grid-template-rows: 1/4fr 1/2fr 1fr;
+  text-align: center;
+  row-gap: 10px;
+  color: #f2f2f2;
+}
+
+.card-details .icon {
+  padding-top: 5px;
+  font-size: 1.5rem;
+}
+
+.card-details h3 {
+  padding-top: 5;
+}
+
+.card-details p {
+  padding-top: 20px;
+  font-size: 1.125rem;
+}
+
+.card:hover {
+  border-color: #ffffff;
+  box-shadow: 0 4px 18px 0 rgba(12, 12, 12, 0.25);
+}
+
+.plans-section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  background-color: #979797;
+  color: #f2f2f2;
+  padding: 30px;
+}
+
+.plans-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.plan-box {
+  text-align: center;
+  margin: 30px;
+  border: 1px solid #eaeaea;
+  padding: 20px;
+}
+
+.plan-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.plan-box .price {
+  margin-bottom: 20px;
+}
+
+.plan-box .currency {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.plan-box .amount {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.plan-box .period {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.plan-box ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.plan-box ul li {
+  font-size: 1.125rem;
+  margin-bottom: 10px;
+}
+
+.plan-box.popular {
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "form info";
+  grid-template-rows: 1/2fr;
+  grid-template-columns: repeat(autofit, minmax(250px, 1fr));
+  column-gap: 30px;
+  color: rgb(0, 0, 0);
+  padding: 50px;
+  background-color: #313131;
+}
+
+.contact-section h2 {
+  color: #f2f2f2;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.contact-header {
+  grid-area: header;
+  place-items: center;
+}
+
+.contact-form {
+  grid-area: form;
+  padding: 30px;
+  border-radius: 2px;
+  background-color: #313131;
+  color: #f2f2f2;
+}
+
+.contact-info {
+  grid-area: info;
+  width: 50%;
+  height: 75%;
+  padding: 30px;
+  justify-self: center;
+  align-self: center;
+  max-width: 80%;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+  font-size: 1.125rem;
+}
+
+.contact-info i {
+  color: #007bff;
+}
+
+.carousel-item.active,
+.item {
+  position: relative;
+  height: 32rem;
+}
+
+.carousel-container {
+  color: white;
+  position: absolute;
+  margin-left: 25%;
+  margin-top: 10%;
+  z-index: 2;
+}
+
+@media (max-width: 767px) {
+  .carousel-container {
+    color: white;
+    position: absolute;
+    margin-left: 25%;
+    margin-top: 20%;
+    z-index: 2;
+  }
+}
+
+.carousel-video {
+  position: absolute;
+  filter: brightness(70%);
+  z-index: 1;
+}
+
+.footer-section {
+  border-top: 2px solid #0884f8;
+}
