@@ -198,6 +198,7 @@ a {
 .item {
   position: relative;
   height: 32rem;
+  background-color: #313131;
 }
 
 .carousel-container {
@@ -221,6 +222,7 @@ a {
 .carousel-video {
   position: absolute;
   filter: brightness(70%);
+  width: 100%;
   z-index: 1;
 }
 
