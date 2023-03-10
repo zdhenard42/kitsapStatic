@@ -161,18 +161,25 @@
       <div class="search-section">
         <div class="search-container">
           <div class="search-header">
-            <h2>Check for availabilty in your area</h2>
+            <h2>Check for availability in your area</h2>
           </div>
-          <form class=search-form>
-            <input id="autocomplete" type="text" placeholder="Enter your address">
-            <br>
-            <br>
-            <div id="congrats-box">
-              Congratulations, We have service in your area!
+          <form class="search-form">
+            <div class="input-container">
+              <input id="autocomplete" type="text" placeholder="Enter your address">
+              <button type="submit" class="btn-search">Search</button>
+            </div>
+            <div class="result-container">
+              <div id="congrats-box" style="display:none;">
+                Congratulations, we have service in your area!
+              </div>
+              <div id="error-box" style="display:none;">
+                Sorry, we do not currently have service in your area.
+              </div>
             </div>
           </form>
         </div>
       </div>
+      
     </section>
     <!-- Plans section -->
     <section class="plans-section reveal" href="#" id="pricing">
