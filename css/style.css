@@ -223,6 +223,7 @@ a {
   position: absolute;
   filter: brightness(70%);
   width: 100%;
+  transform: translateY(-40%);
   z-index: 1;
 }
 
