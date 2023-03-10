@@ -1,0 +1,370 @@
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  /* Main Content Styles */
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+  
+  .section-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .section-header h2 {
+    margin: 0;
+  }
+  
+  /* Features Section Styles */
+  .features-section {
+    margin-bottom: 80px;
+  }
+  
+  .card-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -15px;
+  }
+  
+  .card {
+    flex: 1 1 300px;
+    margin: 0 15px 30px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card-details {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .card .icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .card h3 {
+    margin: 0;
+  }
+  
+  .card p {
+    margin: 20px 0 0;
+  }
+  
+  /* PC Repair Section Styles */
+  .pc-repair-section {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  
+  .pc-repair-section img {
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+  
+  .pc-repair-section h2 {
+    margin-bottom: 40px;
+  }
+  
+  .pc-repair-section .services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -15px;
+  }
+  
+  .service {
+    flex: 1 1 300px;
+    margin: 0 15px 30px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .service:hover {
+    transform: translateY(-10px);
+  }
+  
+  .service-details {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .service h3 {
+    margin: 0;
+  }
+  
+  .service p {
+    margin: 20px 0 0;
+  }
+  
+  .service ul {
+    padding: 0;
+    margin: 20px 0 0;
+  }
+  
+  .service ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+  }
+  
+  /* Contact Section Styles */
+  .contact-section {
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    margin-bottom: 40px;
+  }
+  
+  .contact-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .contact-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .contact-section ul li i {
+    margin-right: 10px;
+  }
+  .image-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .andrew {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+  }
+
+  .contact-section {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "form info";
+    grid-template-rows: 1/2fr;
+    grid-template-columns: repeat(autofit, minmax(250px, 1fr));
+    column-gap: 30px;
+    color: rgb(0, 0, 0);
+    padding: 50px;
+    background-color: #313131;
+  }
+  
+  .contact-section h2 {
+    color: #f2f2f2;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .contact-header {
+    grid-area: header;
+    place-items: center;
+  }
+  
+  .contact-form {
+    grid-area: form;
+    padding: 30px;
+    border-radius: 2px;
+    background-color: #313131;
+    color: #f2f2f2;
+  }
+  
+  .contact-info {
+    grid-area: info;
+    width: 50%;
+    height: 75%;
+    padding: 30px;
+    justify-self: center;
+    align-self: center;
+    max-width: 80%;
+  }
+  
+  .contact-info p {
+    margin-bottom: 10px;
+    font-size: 1.125rem;
+  }
+  
+  .contact-info i {
+    color: #007bff;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #333;
+    color:white;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    }
+    
+    footer a {
+    color: white;
+    }
+    @media (max-width: 768px) {
+    footer {
+    padding: 40px 20px;
+    }
+    }
+    .card-section {
+        display: grid;
+        column-gap: 50px;
+        row-gap: 30px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      
+      .card {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        transition: 0.5s ease-out;
+        overflow: visible;
+        background: transparent;
+        border-color: #313131;
+        box-shadow: 0 4px 18px 0 rgba(112, 112, 112, 0.25);
+      }
+      
+      .card-details {
+        display: grid;
+        grid-template-rows: 1/4fr 1/2fr 1fr;
+        text-align: center;
+        row-gap: 10px;
+        color: #f2f2f2;
+      }
+      
+      .card-details .icon {
+        font-size: 1.5rem;
+      }
+      
+      .card-details h3 {
+        padding-top: 5;
+      }
+      
+      .card-details p {
+        font-size: 1.125rem;
+      }
+      
+      .card:hover {
+        border-color: #ffffff;
+        box-shadow: 0 4px 18px 0 rgba(12, 12, 12, 0.25);
+      }
+      
+      .plans-section {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        background-color: transparent;
+        color: #f2f2f2;
+        padding: 80px 0;
+      }
+      
+      .plans-section h2 {
+        font-size: 3rem;
+        margin-bottom: 60px;
+        text-align: center;
+      }
+      
+      .plan-box {
+        position: relative;
+        text-align: center;
+        width: 300px;
+        height: 400px;
+        background-color: #ffffff41;
+        border-radius: 10px;
+        box-shadow: 0 20px 40px rgba(235, 227, 227, 0.2);
+        transition: all 0.3s ease-in-out;
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .plan-box:hover {
+        box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+        transform: translateY(-10px);
+      }
+      
+      .plan-box.popular::before {
+        content: "Popular";
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 5px 10px;
+        background-color: #007bff;
+        color: #ffffff;
+        font-size: 1.2rem;
+        border-radius: 20px;
+      }
+      
+      .plan-box h3 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+      
+      .plan-box .price {
+        margin-bottom: 20px;
+      }
+      
+      .plan-box .currency {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      
+      .plan-box .amount {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      
+      .plan-box .period {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      
+      .plan-box ul {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 20px;
+      }
+      
+      .plan-box ul li {
+        font-size: 1.125rem;
+        margin-bottom: 10px;
+      }
