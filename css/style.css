@@ -87,24 +87,51 @@ a {
   justify-content: center;
   background-color: #979797;
   color: #f2f2f2;
-  padding: 30px;
+  padding: 80px 0;
 }
 
 .plans-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
+  font-size: 3rem;
+  margin-bottom: 60px;
   text-align: center;
 }
 
 .plan-box {
+  position: relative;
   text-align: center;
+  width: 300px;
+  height: 400px;
+  background-color: #ffffff41;
+  border-radius: 10px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
   margin: 30px;
-  border: 1px solid #eaeaea;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.plan-box:hover {
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+  transform: translateY(-10px);
+}
+
+.plan-box.popular::before {
+  content: "Popular";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #ffffff;
+  font-size: 1.2rem;
+  border-radius: 20px;
 }
 
 .plan-box h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 20px;
 }
 
@@ -120,6 +147,7 @@ a {
 .plan-box .amount {
   font-size: 3rem;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .plan-box .period {
@@ -138,8 +166,29 @@ a {
   margin-bottom: 10px;
 }
 
-.plan-box.popular {
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+@media (max-width: 767px) {
+  .plans-section {
+    padding: 40px 0;
+  }
+  
+  .plan-box {
+    width: 80%;
+    margin: 20px;
+    height: auto;
+    min-height: 400px;
+  }
+  
+  .plan-box h3 {
+    font-size: 1.5rem;
+  }
+
+  .plan-box .amount {
+    font-size: 2rem;
+  }
+
+  .plan-box .period {
+    font-size: 1.2rem;
+  }
 }
 
 .contact-section {
