@@ -27,20 +27,45 @@ a {
   border-color: #0062cc;
 }
 
+.page-wrapper {
+  background-color: #f2f2f2;
+}
+
 .features-section {
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
+  grid-template-rows: repeat(autofit, minmax(750px, 1fr));
   justify-content: space-evenly;
-  border-top: 2px solid #0884f8;
-  padding: 40px 20px;
-  background-color: #313131;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.features-section .header {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 50px;
 }
 
 .card-section {
   display: grid;
   column-gap: 50px;
   row-gap: 30px;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-bottom: 50px;
+}
+
+@media (max-width: 970px) {
+  .card-section {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 550px) {
+  .card-section {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .card {
@@ -49,7 +74,7 @@ a {
   height: auto;
   transition: 0.5s ease-out;
   overflow: visible;
-  background: transparent;
+  background-color: #007bff;
   border-color: #313131;
   box-shadow: 0 4px 18px 0 rgba(112, 112, 112, 0.25);
 }
@@ -73,21 +98,23 @@ a {
 
 .card-details p {
   padding-top: 20px;
+  padding-right: 5px;
+  padding-left: 5px;
   font-size: 1.125rem;
 }
 
 .card:hover {
-  border-color: #ffffff;
-  box-shadow: 0 4px 18px 0 rgba(12, 12, 12, 0.25);
+  border-color: #313131;
+  box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.25);
 }
 
 .plans-section {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  background-color: #979797;
-  color: #f2f2f2;
-  padding: 80px 0;
+  background-color: #f2f2f2;
+  color: #313131;
+  padding: 10px 0;
 }
 
 .plans-section h2 {
@@ -113,7 +140,7 @@ a {
 }
 
 .plan-box:hover {
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.3);
   transform: translateY(-10px);
 }
 
@@ -170,14 +197,14 @@ a {
   .plans-section {
     padding: 40px 0;
   }
-  
+
   .plan-box {
     width: 80%;
     margin: 20px;
     height: auto;
     min-height: 400px;
   }
-  
+
   .plan-box h3 {
     font-size: 1.5rem;
   }
@@ -198,14 +225,15 @@ a {
     "form info";
   grid-template-rows: 1/2fr;
   grid-template-columns: repeat(autofit, minmax(250px, 1fr));
-  column-gap: 30px;
+  column-gap: 20px;
   color: rgb(0, 0, 0);
-  padding: 50px;
-  background-color: #313131;
+  padding: 20px;
+  background-color: #f1f1f1;
+  margin: 20px;
 }
 
 .contact-section h2 {
-  color: #f2f2f2;
+  color: #313131;
   font-size: 2rem;
   margin-bottom: 40px;
   text-align: center;
@@ -220,8 +248,8 @@ a {
   grid-area: form;
   padding: 30px;
   border-radius: 2px;
-  background-color: #313131;
-  color: #f2f2f2;
+  background-color: #f2f2f2;
+  color: #313131;
 }
 
 .contact-info {
@@ -240,7 +268,7 @@ a {
 }
 
 .contact-info i {
-  color: #007bff;
+  color: #313131;
 }
 
 .carousel-item.active,
@@ -277,6 +305,18 @@ a {
 }
 
 .footer-section {
-  border-top: 2px solid #0884f8;
+  background-color: #313131;
+  color: #f2f2f2;
 }
 
+.reveal {
+  position: relative;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
