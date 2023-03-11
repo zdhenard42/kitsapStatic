@@ -31,7 +31,7 @@
                 <a class="nav-link selected" aria-current="page" href="#" id="residential-link">Residential</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./business.html" id="business-link">Business</a>
+                <a class="nav-link" href="#" id="business-link">Business</a>
               </li>
             </ul>
             <ul class="navbar-nav1 ms-auto mb-2 mb-lg-0">
@@ -160,6 +160,28 @@
           </div>
         </div>
       </div>
+      <div class="search-section">
+        <div class="search-container">
+          <div class="search-header">
+            <h2>Check for availability in your area</h2>
+          </div>
+          <form class="search-form">
+            <div class="input-container">
+              <input id="autocomplete" type="text" placeholder="Enter your address">
+              <button type="submit" class="btn-search">Search</button>
+            </div>
+            <div class="result-container">
+              <div id="congrats-box" style="display:none;">
+                Congratulations, we have service in your area!
+              </div>
+              <div id="error-box" style="display:none;">
+                Sorry, we do not currently have service in your area.
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      
     </section>
     <!-- Plans section -->
     <section class="plans-section reveal" href="#" id="pricing">
