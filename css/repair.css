@@ -169,8 +169,9 @@ body {
   .andrew {
     background-color: #007bff;
     color: white;
-    padding: 20px;
-  }
+    width: 90%;
+    position: relative;
+    }
 
   .contact-section {
     display: grid;
@@ -367,4 +368,38 @@ body {
       .plan-box ul li {
         font-size: 1.125rem;
         margin-bottom: 10px;
+      }
+
+      .service-areas-section {
+        background-color: #f8f9fa;
+        padding: 60px 0;
+      }
+      
+      .service-areas-section h2 {
+        font-size: 36px;
+        font-weight: bold;
+        color: #333;
+      }
+      
+      .service-areas-section p.lead {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+      }
+      
+      .service-areas-section table th {
+        font-weight: bold;
+        font-size: 18px;
+        color: #333;
+        background-color: #f8f9fa;
+      }
+      
+      .service-areas-section table td {
+        font-size: 18px;
+        color: #333;
+      }
+      
+      .service-areas-section ul li {
+        font-size: 18px;
+        color: #333;
       }

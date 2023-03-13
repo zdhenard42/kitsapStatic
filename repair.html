@@ -11,109 +11,167 @@
 </head>
 <body>
 	<!-- First Navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-light">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-          <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar2"
-              aria-controls="navbar2" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbar2">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link selected" aria-current="page" href="./index.html" id="residential-link">Residential</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#" id="business-link">Business</a>
-                </li>
-              </ul>
-              <ul class="navbar-nav1 ms-auto mb-2 mb-lg-0">
-                <a class="nav-link" href="https://asgard.kitsapwifi.com/">My Account</a>
-              </ul>
-            </div>
-          </div>
-      </nav>
-      
-      <!-- Second Navbar -->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary bg-light">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-          <div class="container-fluid">
-            <img class="navbar-brand" src="./images/hero-image.png"></img>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1"
-                aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="" role="button"><i class="fa fa-bars" aria-hidden="true" style="color:#000000"></i></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbar1">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#pricing">Packages</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Services
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Commercial Internet</a></li>
-                      <li>
-                        <!--create path to repair-->
-                      </li>
-                      <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li><a class="dropdown-item" href="#">Check Availability</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-          </div>
-      </nav>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary bg-light">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar2"
+          aria-controls="navbar2" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar2">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link selected" aria-current="page" href="./index.html" id="residential-link">Residential</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./business.html" id="business-link">Business</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav1 ms-auto mb-2 mb-lg-0">
+            <a class="nav-link" href="https://asgard.kitsapwifi.com/">My Account</a>
+          </ul>
+        </div>
+      </div>
+  </nav>
+  
+  <!-- Second Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary bg-light">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <div class="container-fluid">
+      <img class="navbar-brand" src="./images/hero-image.png"></img>
+      <div class="collapse navbar-collapse" id="navbar1">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#name">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./repair.html">IT Services</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 	<main>
-        <section id="hero" class="jumbotron text-center">
-			<h1 class="display-4">Fast, Reliable PC Repair Services</h1>
-			<p class="lead">Get your computer fixed by professionals in no time.</p>
-			<a href="#services" class="btn btn-primary btn-lg mt-3">See Services</a>
-		</section>
-        <section class="plans-section" href="#" id="pricing">
+    <section id="hero" class="jumbotron text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 class="display-4">Fast, Reliable PC Repair Services</h1>
+            <span class="lead">
+              Hi, I'm Andrew.
+              I have over 20 years experience in IT/PC Repair & Networking and provide help for many homes and businesses. My clients are important to me. They trust me with their personal and business data, let me into the homes and businesses and can depend on me to get the job done, no matter what it takes.
+            </span>
+          </div>
+          <div class="col-md-6">
+            <img class="andrew" src="./images/andrew.png">
+          </div>
+        </div>
+      </div>
+      <section class="service-areas-section" href="#" id="service-areas">
+        <div class="container">
+          <div class="row">
             <div class="col-md-12">
-              <h2>Our Services</h2>
-            </div>
-            <div class="plan-box">
-              <h3>Virus Removal</h3>
-              <div class="price">
-                <span class="currency">$</span>
-                <span class="amount">199.00</span>
-                <span class="period">/month</span>
+              <h2 class="text-center mb-5">Service Areas</h2>
+              <p class="lead text-center">Covering Kitsap, Jefferson, Mason, and Callum Counties</p>
+              <div class="table-responsive">
+                <table class="table table-bordered table-hover">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>Residential</th>
+                      <th>Business</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>On-Site Home & Business</td>
+                      <td>$125/hr</td>
+                      <td>$150/hr</td>
+                    </tr>
+                    <tr>
+                      <td>On-Site & Remote Consulting</td>
+                      <td>$99/hr</td>
+                      <td>$99/hr</td>
+                    </tr>
+                    <tr>
+                      <td>Emergencies</td>
+                      <td>$175/hr</td>
+                      <td>$250/hr</td>
+                    </tr>
+                    <tr>
+                      <td>Drop-Off Services</td>
+                      <td colspan="2">$85/hr (most jobs 60-90 mins on average)</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-              <ul>
-                <li>We'll remove all viruses, spyware, and malware from your computer and make sure it's running smoothly.</li>
-              </ul>
-              <a href="#" class="btn btn-primary">Sign Up</a>
-            </div>
-            <div class="plan-box">
-              <h3>Hardware Repair</h3>
-              <div class="price">
-                <span class="currency">$</span>
-                <span class="amount">125.00</span>
-                <span class="period">/month</span>
+              <div class="text-center">
+                <p class="lead">Desktops, Laptops, and Servers</p>
+                <p class="lead">Wired and Wireless Networks</p>
+                <p class="lead">Phones (VOIP), Cameras (IP)</p>
+                <p class="lead">Hardware upgrades, slow computers, failing hard drives, broken screens and slow internet are just a few of the challenges that I can assist you with.</p>
+                <p class="lead">I can also:</p>
+                <ul class="list-unstyled text-left">
+                  <li>Lend you advice on buying a new computer.</li>
+                  <li>Fix or tune-up an older computer.</li>
+                  <li>Help you find affordable replacements for failing hardware that would normally be too expensive to repair.</li>
+                  <li>Install wireless and wired networks.</li>
+                  <li>Set up home or business security cameras.</li>
+                  <li>Set up printers, copiers and scanners.</li>
+                </ul>
+                <p class="lead">Here is some of my recent work: </p>
+                <div class="row mt-lg-5">
+                  <div class="col-md-2">
+                    <img src="./images/RepairServicesImages/image (1).jpg" class="img-fluid">
+                  </div>
+                  <div class="col-md-2">
+                    <img src="./images/RepairServicesImages/image (2).jpg" class="img-fluid">
+                  </div>
+                  <div class="col-md-2">
+                    <img src="./images/RepairServicesImages/image (3).jpg" class="img-fluid">
+                  </div>
+                  <div class="col-md-2">
+                    <img src="./images/RepairServicesImages/image (16).jpg" class="img-fluid">
+                  </div>
+                  <div class="col-md-2">
+                    <img src="./images/RepairServicesImages/image (5).jpg" class="img-fluid">
+                  </div>
+                  <div class="col-md-2">
+                    <img src="./images/RepairServicesImages/image (6).jpg" class="img-fluid">
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-md-2">
+                    <img src="./images/RepairServicesImages/image (16).jpg" class="img-fluid">
+                  </div>
+                  <div class="col-md-2">
+                    <img src="./images/RepairServicesImages/image (19).jpg" class="img-fluid">
+                  </div>
+                  <div class="col-md-2">
+                    <img src="./images/RepairServicesImages/image (25).jpg" class="img-fluid">
+                  </div>
+                  <div class="col-md-2">
+                    <img src="./images/RepairServicesImages/image (10).jpg" class="img-fluid">
+                  </div>
+                  <div class="col-md-2">
+                    <img src="./images/RepairServicesImages/image (11).jpg" class="img-fluid">
+                  </div>
+                  <div class="col-md-2">
+                    <img src="./images/RepairServicesImages/image (15).jpg" class="img-fluid">
+                  </div>
+                </div>
+                <!-- Add more rows as necessary for your 30 images -->
               </div>
-              <ul>
-                <li>From broken screens to malfunctioning hardware, we can repair your computer quickly and affordably.</li>
-              </ul>
-              <a href="#" class="btn btn-primary">Sign Up</a>
             </div>
-            <div class="plan-box">
-              <h3>Software Installation</h3>
-              <div class="price">
-                <span class="currency">$</span>
-                <span class="amount">99.99</span>
-                <span class="period">/month</span>
-              </div>
-              <ul>
-                <li>We can install and configure any software you need on your computer to get it up and running the way you want it.</li>
-              </ul>
-              <a href="#" class="btn btn-primary">Sign Up</a>
-            </div>
-          </section>
+          </div>
+        </div>
+      </section>
 		<section class="contact-section">
             <div class="contact-header">
               <h2>Contact Us</h2>
