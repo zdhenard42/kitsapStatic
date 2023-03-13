@@ -1,4 +1,4 @@
-window.addEventListener('scroll', (reveal));
+window.addEventListener('scroll', reveal);
 
 var reveals = document.querySelectorAll('.reveal');
 function reveal() {
