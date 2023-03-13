@@ -193,6 +193,17 @@ a {
   margin-bottom: 10px;
 }
 
+.plans-section .col-md-12 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-check {
+  margin: 10px;
+}
+
 @media (max-width: 767px) {
   .plans-section {
     padding: 40px 0;
@@ -229,7 +240,7 @@ a {
   color: rgb(0, 0, 0);
   padding: 20px 70px;
   background-color: #f1f1f1;
-  margin: 20px;
+  margin-top: 40px;
 }
 
 .contact-section h2 {
@@ -269,6 +280,29 @@ a {
 
 .contact-info i {
   color: #313131;
+}
+
+@media (max-width: 530px) {
+  .contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .contact-info {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: left;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .contact-info p {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+  }
 }
 
 .carousel-item.active,
